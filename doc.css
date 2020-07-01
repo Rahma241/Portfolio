@@ -1,0 +1,388 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body,header,main{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+main {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	
+}
+header{
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	background-image: url("assets/img/font.jpg");
+	background-size: cover;
+	display: flex;
+}
+
+header div:nth-child(1){
+	padding: 10px 0 0 25px;
+}
+
+header div:nth-child(2){
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	flex-grow: 2;
+	padding-left: 300px;
+}
+
+header div:nth-child(3){
+	margin-right: 80px;
+}
+
+header div{
+	height: 100vh;
+}
+
+header div:nth-child(2) p,h1{
+	margin: 0 auto;
+	font-size: 30px;
+}
+
+h1{
+	text-shadow: 1px 1px 10px gray;
+}
+
+nav{
+	height: 20vh;
+	width: 70%;
+	margin: 15px auto 5px;
+	display: flex;
+	justify-content: space-around;
+
+}
+
+/*********** section a propos ********/
+
+#a-propos{
+	min-height: 100vh;
+}
+
+nav div{
+	width: 70px;
+	height: 70px;
+	margin-right: 5%;
+	box-sizing: border-box;
+	box-shadow: 0 20px 50px;
+	transform: rotate(25deg);
+}
+
+nav div:hover{
+	transform: rotate(0);
+	transition: 0.5s;
+	background-color: rgba(165,165,165,0.1);
+}
+
+nav div a img{
+	margin: 8px 10px 3px 10px;
+}
+
+.container{
+	display: flex;
+	margin-right: 10vw;
+}
+
+.identity{
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	margin-left: 10vw;
+}
+
+.identity div{
+	margin-right: 100px;
+	border: 3px solid gray;
+	border-radius: 50%;
+	height: 250px;
+	width: 250px;
+}
+
+.container div:nth-child(2){
+	width: 90vw;
+	font-size: 20px;
+	/*border: 3px solid gray;*/
+	padding:20px 30px;
+	margin-bottom: 10px;
+	box-shadow: 0 10px 20px -8px #c5d6d6;
+}
+
+/*********section reéalisations*********/
+
+#realisations{
+	background: url(assets/img/computer.jpg) center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	}
+
+#realisations h1 {
+	color: #fff;
+	text-align: center;
+	margin: 30px 0 20px 0;
+	font-size: 2.2rem;
+}
+
+.container1{
+	width: 100vw;
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	flex-wrap: wrap;
+}
+
+.container1 .card{
+	position: relative;
+}
+
+ .card .face{
+	width: 300px;
+	height: 200px;
+	transition: 0.5s;
+}
+
+ .card .face1{
+	position: relative;
+	background:#333;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	transform: translateY(100px);	
+}
+
+ .card:hover .face1{
+	transform: translateY(0);
+	background:#ff0057;
+}
+ .card .face2{
+	position: relative;
+	background:#fff;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 10px ;
+	box-sizing: border-box;
+	box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+	transform: translateY(-100px);
+}
+
+.container1 .card:hover .face2{
+	transform: translateY(0);
+}
+
+.content a{
+	display: inline-block;
+	margin: 35px 0 0px;
+	text-decoration: none;
+	font-weight: 900;
+	color:#333;
+	padding: 5px 15px;
+	border: 1px solid #333;
+}
+
+.content a:hover{
+	background:#333;
+	color: #fff;
+}
+
+.face.face1 .content{
+	opacity: 0.2;
+	transition: 0.5s
+}
+
+.card:hover .face.face1 .content{
+	opacity: 1;
+}
+
+.face.face1 .content h3{
+	color: #fff;
+	text-align: center;
+	padding:2px 0 10px 10px;
+}
+
+.content img{
+	width:250px;
+	height:150px;
+}
+
+.face2 .content p{
+	text-align: justify;
+}
+
+/*
+}
+
+.content{
+	display: flex;
+	width: 50vw;
+	height: 80vh;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 50px;
+}
+
+.content div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20vw;
+	/*border: 1px solid black;
+	height: 30vh;
+}
+
+.content div:nth-child(1){
+	background: url(assets/img/form2.png) no-repeat center;
+	background-size: cover;
+
+}
+
+.content div:nth-child(2){
+	background: url(assets/img/media2.jpg) center;
+	background-size: cover;
+}
+
+.content div:nth-child(3){
+	background: url(assets/img/lettre.png) center;
+	background-size: cover;
+}
+
+.content div:nth-child(4){
+	background: url(assets/img/emplois.png) center;
+	background-size: cover;
+}
+
+
+button{
+	width: 80px;
+	height: 40px;
+	border: none;
+}
+
+button a{
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}*/
+
+/***********section compétences********/
+#competences{
+	background-color: purple;
+	height: 100vh;
+	width: 100vw;	
+	color: #fff;
+	background-color: #000;
+}
+
+#competences>h1{
+	text-align: center;
+	margin: 30px 0;
+	color: #fff;
+	font-size: 2.3rem;
+}
+
+.hard h2,.soft h2{
+	margin: 0 0 35px;
+	text-align: center;
+}
+
+/*.hard,.soft{
+	box-shadow: 0 10px 20px -8px #c5d6d6;
+	background-color: #fff;
+	padding: 0 30px;
+}*/
+.container2{
+	display: flex;
+	justify-content: space-around;
+}
+
+.skill{
+	margin-bottom: 35px;
+	position: relative;
+	width: 40vw;
+}
+
+.skill::before{
+	content: "";
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	display: block;
+	background-color: #959595;
+	bottom: 0;
+	border-radius: 10px;
+}
+
+.skill p{
+	font-size: 18px;
+	color: 1a1716;
+	margin: 0;
+}
+
+.skill1{
+	background-image: linear-gradient(109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1%);
+	width: 80%;
+}
+.skill2{
+	background-image: linear-gradient(109.6deg, rgba(253,199,141,1) 11.3%, rgba(249,143,253,1) 100.2%);
+	width: 50%;
+}
+.skill3{
+	background-image: linear-gradient(109.6deg, rgba(253,193,104,1) 0%, rgba(251,128,128,1) 90%);
+	width: 70%;
+}
+.skilla{
+	background-image: linear-gradient(109.6deg, rgba(218,185,252,1) 11.2%, rgba(125,89,252,1) 91.1%);
+	width: 70%;
+}
+.skillb{
+	background-image: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+	width: 50%;
+}
+
+.skill-bar{
+	height: 20px;
+	display: block;
+	position: relative;
+	border-radius: 10px; 
+	animation: animated 1s both;
+}
+
+.skill-bar span{
+	position: absolute;
+	top: -50px;
+	padding: 30px 0;
+	font-size: 18px;	
+}
+.skill-count{
+	right: 0;
+}
+@keyframes animated{
+	from{
+		transform: translate3d(-100%,0,0);
+		visibility: visible;
+	}
+	to{
+		transform: matrix3d(0,0,0);
+	}
+}
+/*****************section contacts*****************/
+
+footer{
+	background-color: lightgray;
+	height: 40vh;
+}
+
+footer>h1{
+	color: #fff;
+	text-align: center;
+}
+
